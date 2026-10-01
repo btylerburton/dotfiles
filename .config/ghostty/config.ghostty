@@ -1,2 +1,8 @@
 keybind = ctrl+d=new_split:right
 
+# macOS-style copy / paste
+keybind = cmd+c=copy_to_clipboard
+keybind = cmd+v=paste_from_clipboard
+
+# Reload Ghostty config
+keybind = cmd+shift+r=reload_config
