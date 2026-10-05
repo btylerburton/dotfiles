@@ -49,29 +49,15 @@ setopt no_inc_append_history
 #### MY STUFF
 
 export EDITOR='/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code'
-# export AWS_ACCESS_KEY_ID=AKIAR7FXZINYF3ZQW6GO
-# export AWS_SECRET_ACCESS_KEY=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
-# export BUCKET_NAME=cg-0817d6e3-93c4-4de8-8b32-da6919464e61
-# export AWS_DEFAULT_REGION=us-gov-west-1
-export GITHUB_PERSONAL_API_TOKEN=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
-export GITHUB_API_TOKEN=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
 export POSTGRES_USER="postgres"
-export CF_SERVICE_USER="447be50d-39e6-4117-83b6-4f71c77daa05"
-export CF_SERVICE_AUTH="AJtL,zsVcjIFS79kq5GlfXTn6VkBUGUn"
 export NODE_EXTRA_CA_CERTS=~/Documents/zscaler-root.pem
-export CKAN_API_TOKEN="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJMQW1WVnFRbGF4ZlBkT1lZMFN1cWdQME5VUjRucXdSWUlYTVpMbGtQY1RnIiwiaWF0IjoxNzM3NjU0OTIzfQ.wkXIbf-uANa_AkAd57kFqC4_2cbS2zDkvIl0SpkPpSE"
 
 # PIC
-export USAI_API_KEY="api-key-85b003c1-8a19-437e-b5d2-5a40c349e191:bn1BcCO9rLyQhh4XDsP381j7eNtMJytr"
 export QSBX_EXTRA_KITS="./sbx/kits/pic-egress"
-alias qsbx="~/Repos/AGENTIC/agentic-coding-quickstart/qsbx"
 alias acq="~/Repos/AGENTIC/agentic-coding-quickstart/acq"
 
 # docker -> podman
 export DOCKER_HOST="unix://$(podman machine inspect --format '{{.ConnectionInfo.PodmanSocket.Path}}')"
-
-# export AWS_ACCESS_KEY_ID_METRICS=AKIAR7FXZINYNPISNEDU
-# export AWS_SECRET_ACCESS_KEY_METRICS=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
 
 # asdf
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed
@@ -83,8 +69,6 @@ alias l='ls -la'
 alias hg='history | grep'
 alias tf='terraform'
 alias python='python3'
-alias lg='lazygit'
-alias docker-restart="osascript -e 'quit app \"Docker\"' && open -a Docker"
 alias buu="brew update && brew upgrade"
 alias gitall="find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin main \;"
 alias zsoff='sudo launchctl unload /Library/LaunchDaemons/com.zscaler.service.plist /Library/LaunchDaemons/com.zscaler.tunnel.plist'
