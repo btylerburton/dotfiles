@@ -165,3 +165,4 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 # make sure the --git-dir is the same as the
 # directory where you created the repo above.
 alias config="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias logtree="git log --graph --pretty=oneline --abbrev-commit"
